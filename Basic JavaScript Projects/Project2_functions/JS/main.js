@@ -9,3 +9,9 @@ function myFunction() { //defining and naming a function
     sentence+= "outdoors so much!";//concatenating using the =+ operator
     document.getElementById("Concatenate").innerHTML= sentence;//identifying JS to be called
 }
+
+
+function changeColor(newColor) {
+    const elem= document.getElementById('para');
+    elem.style.color=newColor;
+}
