@@ -10,3 +10,4 @@ function my_Dictionary() { //defining function of a dictionary
     delete Pet.Name; //deletes this kvp
     document.getElementById("Dictionary").innerHTML= Pet.Name; //results in undefined because kvp was deleted
 }
+
