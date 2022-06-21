@@ -12,7 +12,7 @@ function getReceipt() {
         }
     }
     if (selectedSize === "Baby Pizza") {
-        sizeTotal = 6;
+        sizeTotal = 6; //prices of each size
     } else if (selectedSize === "Personal Pizza") {
         sizeTotal= 8;
     } else if (selectedSize === "Medium Pizza") {
@@ -30,14 +30,14 @@ function getReceipt() {
     getTopping(runningTotal,text1);
 };
 
-function getTopping(runningTotal, text1) {
+function getTopping(runningTotal, text1) { //topping section
     var toppingTotal= 0;
     var selectedTopping= [];
     var toppingArray= document.getElementsByClassName("toppings");
     for (var j= 0; j < toppingArray.length; j++) {
         if (toppingArray[j].checked) {
             selectedTopping.push(toppingArray[j].value);
-            console.log("selected topping item: ("+toppingArray[j].value+")");
+            console.log("selected topping item: ("+toppingArray[j].value+")"); //selected topping will display
             text1= text1+toppingArray[j].value+"<br>";
         }
     }
