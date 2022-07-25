@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1,0" name="viewport">
+        <script src="./challenge#30.js" defer></script>
+         
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="./challenge#30#31.css">
+        <h2>Phone number form</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    First Name: <input type="text" name="fname"><br>
+    Number: <input type="text" name="number">
+    <input type="submit" value="Submit">
+</form>
+
+<button class="open-button" onclick="openForm()">Open Here</button>
+
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><br>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+<div class="image-for-zoom">
+<img src="../HTML-and-CSS-Projects/One page website/images/trailer3.jpg" alt="Trailer interior">
+</div>
+
+<div id="slideshow">
+    <div>
+      <img src="../HTML-and-CSS-Projects/One page website/images/trailer1.jpg">
+    </div>
+    <div>
+      <img src="../HTML-and-CSS-Projects/One page website/images/trailer2.jpg">
+    </div>
+    <div>
+      Pretty cool eh? This slide is proof the content can be anything.
+    </div>
+  </div>
+
+    </body>
+    </html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <!--head-->
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width"/>
+      <title>Ryean Sharratt</title>
+      <link rel="shortcut icon" type="img/jpg" href="images/coding-computer.jpg">
+      <link rel="stylesheet" type="text/css" href="./portfolio_example.css">
+    </head>
+
+  <!--body-->
+  <body class="Background">
+
+      <!--navbar-->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+    <!-- Onclick and ondbclick functions added to open and close contact form-->
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
+
+    <!---breaks for space-->
+    <br>
+    <br>
+
+    <!--background video-->
+       <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./Images/typing-vid.mp4" type="video/mp4">
+                <!--alt message-->
+                Your browser does not support HTML5 video.
+            </video>
+       </div>
+
+    <!--video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">Ryean Sharratt's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <br>
+                <br>
+                <q>Creative. Impactful. Development.</q>
+                <br>
+                <br>
+                <br>Hey, I'm Ryean
+                <br>Thank you for stopping by my portfolio, enjoy!
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+        </strong>
+    </div>
+
+    <!-- SLIDESHOW section -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!-- Slide 1 of 5 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/IMG_2314 (1).jpg" alt="Picture of me">
+                    <div class="text">The face behind the screen! Let me assist you on your project.</div>
+                </div>
+                <!-- Slide 2 of 5 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/coding-page.jpg" alt="">
+                    <div class="text">HTML, CSS, Javascript</div>
+                </div>
+                <!-- Slide 3 of 5 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/person-typing-coding.jpg" alt="">
+                    <div class="text">C#, .NET Framework, ASP.NET</div>
+                </div>
+                <!-- Slide 4 of 5 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/coding-computer.jpg" alt="">
+                    <div class="text">User interface, back-end development, databases and SQL</div>
+                </div>
+                <!-- Slide 5 of 5 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/person-typing-coding.jpg" alt="">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                </div>
+    </div>
+                <!-- Previous and Next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between slideshow images and dots -->
+
+                <!-- Slideshow dots (way to navigate slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                
+                </div>
+            </div>
+        </div>
+
+    <!--about section-->
+    <div class="row" id="About">
+        <!--left column-->
+        <div class="Column_2">
+            <img src="./Images/person-typing-coding.jpg" alt="Person coding">
+        </div>
+        <!--right column-->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a full-stack junior software and web developer, and would love to collaborate with you! 
+                <br>
+                <br>A graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, I've come to love problem solving and building, and am experienced in these web & programming languages: HTML, CSS, Javascript, SQL, C#, .NET framework, and more.
+                <br>
+                <br>When I'm not behind a computer you'll find me outdoors loving my central Alberta backyard. <a onclick="openForm()" class="contact">Reach out</a> below!
+            </p>
+        </div>
+    </div>
+
+    <!--github section-->
+    <div class="row" id="GitHub">
+        <!--left column-->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>
+                View my projects on my GitHub profile here:
+                <br>
+                <p class="center"><a href="https://github.com/ryeansharratt" target="_blank">Ryean's GitHub</a></p>
+            </p>
+        </div>
+        <!--right column-->
+        <div class="Column_2">
+            <a href="https://github.com/ryean-sharratt" target="_blank"><img src="./Images/coding-page.jpg" alt="Coding"></a>
+        </div>
+     </div>
+
+     <!--contact section-->
+     <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                <!--- using free online service from formspree to send contact form to chosen email address when submitted, WON'T run unless
+                live online -->
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button> <!-- closes form -->
+            </form>
+        </div>
+     </div>
+ 
+     <!--footer section-->
+     <footer>
+        <p>
+            <p class="footer">&copy Ryean's Web Services & Co.</p>
+            <br>
+        </p>
+    </footer>
+
+        <script src="js/portfolio.js"></script>
+  </body>
+</html>
